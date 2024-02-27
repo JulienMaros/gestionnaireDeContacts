@@ -82,7 +82,9 @@ public class ContactManager {
         }
     }
 
-    public static void afficherContact(listeContact) {
-        for ()
+    public static void afficherContact() {
+        for (Contacts contacts : listeContact) {
+            System.out.println(contacts);
+        }
     }
 }
