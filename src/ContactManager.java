@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class ContactManager {
@@ -82,6 +84,13 @@ public class ContactManager {
     }
 
     public static void afficherContact() {
+        for (Contacts contacts : listeContact) {
+            System.out.println(contacts);
+        }
+    }
+
+    public static void trier() {
+        Collections.sort(listeContact, new PrenomComparator());
         for (Contacts contacts : listeContact) {
             System.out.println(contacts);
         }
