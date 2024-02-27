@@ -89,6 +89,13 @@ public class ContactManager {
         }
     }
 
+    public static void trier() {
+        Collections.sort(listeContact, new PrenomComparator());
+        for (Contacts contacts : listeContact) {
+            System.out.println(contacts);
+        }
+    }
+
     public static void trierContactsParNom() {
         Collections.sort(listeContact, new NomComparateur());
         for (Contacts contact : listeContact) {
