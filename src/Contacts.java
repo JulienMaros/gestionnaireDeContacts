@@ -1,48 +1,52 @@
 public class Contacts {
 
-private String nom;
-private String prenom;
-private Integer numeroTelephone;
-private String adresseEMail;
+    protected String nom;
+    protected String prenom;
+    protected String numeroTelephone;
+    protected String adresseEMail;
 
-//Constructeur :
-    public Contacts(String nom, String prenom, Integer numeroTelephone, String adresseEMail) {
+    public Contacts() {
+    }
+
+    //Constructeur :
+    public Contacts(String nom, String prenom, String numeroTelephone, String adresseEMail) {
         this.nom = nom;
         this.prenom = prenom;
         this.numeroTelephone = numeroTelephone;
         this.adresseEMail = adresseEMail;
     }
 
-//Getters Setters
+    //Getters Setters
+
     public String getNom() {
         return nom;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public static void setNom(String nom) {
+        nom = nom;
     }
 
     public String getPrenom() {
         return prenom;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public static void setPrenom(String prenom) {
+        prenom = prenom;
     }
 
-    public Integer getNumeroTelephone() {
+    public String getNumeroTelephone() {
         return numeroTelephone;
     }
 
-    public void setNumeroTelephone(Integer numeroTelephone) {
-        this.numeroTelephone = numeroTelephone;
+    public static void setNumeroTelephone(String numeroTelephone) {
+        numeroTelephone = numeroTelephone;
     }
 
     public String getAdresseEMail() {
         return adresseEMail;
     }
 
-    public void setAdresseEMail(String adresseEMail) {
-        this.adresseEMail = adresseEMail;
+    public static void setAdresseEMail(String adresseEMail) {
+        adresseEMail = adresseEMail;
     }
 }
