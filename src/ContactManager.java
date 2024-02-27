@@ -4,11 +4,12 @@ import java.util.Scanner;
 public class ContactManager {
     static ArrayList<Contacts> listeContact = new ArrayList<Contacts>();
 
-    Contacts contact = new Contacts();
 
-    public static void ajouterContact(Contacts contact) {
+    public static void ajouterContact() {
 
         String result = "O";
+
+        Contacts contact = new Contacts();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -17,16 +18,16 @@ public class ContactManager {
             System.out.println("Ajouter un nouveau contact");
 
             System.out.println("nom : ");
-            Contacts.setNom(scanner.nextLine());
+            contact.setNom(scanner.nextLine());
 
             System.out.println("prenom : " + scanner.nextLine());
-            Contacts.setPrenom(scanner.nextLine());
+            contact.setPrenom(scanner.nextLine());
 
             System.out.println("adresse : " + scanner.nextLine());
-            Contacts.setAdresseEMail(scanner.nextLine());
+            contact.setAdresseEMail(scanner.nextLine());
 
             System.out.println("telephone : " + scanner.nextLine());
-            Contacts.setNumeroTelephone(scanner.nextLine());
+            contact.setNumeroTelephone(scanner.nextLine());
 
             listeContact.add(contact);
 
@@ -35,7 +36,7 @@ public class ContactManager {
         }
     }
 
-    public static void supprimerContact(ArrayList listeContact) {
+    public static void supprimerContact() {
         String result = "O";
 
         Scanner scanner = new Scanner(System.in);
@@ -53,7 +54,7 @@ public class ContactManager {
         }
     }
 
-    public static void modifierContact(ArrayList listeContact) {
+    public static void modifierContact() {
         String result = "O";
 
         Scanner scanner = new Scanner(System.in);
@@ -65,16 +66,16 @@ public class ContactManager {
             int indice = scanner.nextInt();
 
             System.out.println("Nouveau nom");
-            listeContact(indice).setNom(scanner.nextLine());
+            listeContact.get(indice).setNom(scanner.nextLine());
 
             System.out.println("Nouveau prénom");
-            listeContact(indice).setPrenom(scanner.nextLine());
+            listeContact.get(indice).setPrenom(scanner.nextLine());
 
             System.out.println("Nouveau adresse");
-            listeContact(indice).setAdresseEMail(scanner.nextLine());
+            listeContact.get(indice).setAdresseEMail(scanner.nextLine());
 
             System.out.println("Nouveau numéro téléphone");
-            listeContact(indice).setNumeroTelephone(scanner.nextLine());
+            listeContact.get(indice).setNumeroTelephone(scanner.nextLine());
 
             System.out.println("Voulez-vous modifier un autre contact ? Oui : O sinon Non : N");
             result = scanner.nextLine();

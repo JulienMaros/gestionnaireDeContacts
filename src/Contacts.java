@@ -22,31 +22,31 @@ public class Contacts {
         return nom;
     }
 
-    public static void setNom(String nom) {
-        nom = nom;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getPrenom() {
         return prenom;
     }
 
-    public static void setPrenom(String prenom) {
-        prenom = prenom;
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     public String getNumeroTelephone() {
         return numeroTelephone;
     }
 
-    public static void setNumeroTelephone(String numeroTelephone) {
-        numeroTelephone = numeroTelephone;
+    public void setNumeroTelephone(String numeroTelephone) {
+        this.numeroTelephone = numeroTelephone;
     }
 
     public String getAdresseEMail() {
         return adresseEMail;
     }
 
-    public static void setAdresseEMail(String adresseEMail) {
-        adresseEMail = adresseEMail;
+    public void setAdresseEMail(String adresseEMail) {
+        this.adresseEMail = adresseEMail;
     }
 }
