@@ -34,4 +34,54 @@ public class ContactManager {
             result = scanner.nextLine();
         }
     }
+
+    public static void supprimerContact(ArrayList listeContact) {
+        String result = "O";
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (result == "O") {
+
+            System.out.println("Supprimer un contact");
+            System.out.println("Donner l'indice du contact");
+            int indice = scanner.nextInt();
+
+            listeContact.remove(indice);
+
+            System.out.println("Voulez-vous supprimer un autre contact ? Oui : O sinon Non : N");
+            result = scanner.nextLine();
+        }
+    }
+
+    public static void modifierContact(ArrayList listeContact) {
+        String result = "O";
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (result == "O") {
+
+            System.out.println("Modifier un contact");
+            System.out.println("Donner l'indice du contact");
+            int indice = scanner.nextInt();
+
+            System.out.println("Nouveau nom");
+            listeContact(indice).setNom(scanner.nextLine());
+
+            System.out.println("Nouveau prénom");
+            listeContact(indice).setPrenom(scanner.nextLine());
+
+            System.out.println("Nouveau adresse");
+            listeContact(indice).setAdresseEMail(scanner.nextLine());
+
+            System.out.println("Nouveau numéro téléphone");
+            listeContact(indice).setNumeroTelephone(scanner.nextLine());
+
+            System.out.println("Voulez-vous modifier un autre contact ? Oui : O sinon Non : N");
+            result = scanner.nextLine();
+        }
+    }
+
+    public static void afficherContact(listeContact) {
+        for ()
+    }
 }
