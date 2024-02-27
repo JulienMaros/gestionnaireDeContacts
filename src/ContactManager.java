@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class ContactManager {
     static ArrayList<Contacts> listeContact = new ArrayList<Contacts>();
 
-
     public static void ajouterContact() {
 
         String result = "O";
